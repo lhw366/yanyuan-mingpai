@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#c8c2b2" />
+    <meta name="description" content="燕园撕名牌：未名湖畔第一人称 3D 赛区。非官方同人作品。" />
+    <title>燕园撕名牌 · 未名湖畔</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23637061'/%3E%3Cpath d='M12 42Q32 12 52 42Q32 58 12 42' fill='%23d9d6cf'/%3E%3C/svg%3E" />
+    <script type="module" crossorigin src="./assets/index-DypK_XOx.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CkNVReWL.css">
+  </head>
+  <body>
+    <main id="app">
+      <div id="scene" aria-label="未名湖畔三维赛区"></div>
+      <header class="hud title-block">
+        <p>燕园撕名牌</p>
+        <h1>未名湖畔</h1>
+        <span id="quality-label">初始化画质</span>
+        <span id="color-mode">当前探索</span>
+        <button id="quality-toggle" class="hud quality-toggle" type="button">切换画质</button>
+      </header>
+      <button id="about-toggle" class="hud about-toggle" type="button">关于</button>
+      <section id="about-panel" class="hud about-panel" hidden>
+        <h2>燕园撕名牌 · 未名湖畔</h2>
+        <p>非官方同人作品，使用 Qoder 开发，不使用北大校徽或官方标识。</p>
+        <p>地图数据 © OpenStreetMap contributors (ODbL)</p>
+        <p>树冠数据 © Meta & World Resources Institute, High Resolution Canopy Height Maps, CC BY 4.0</p>
+        <p>HDRI / PBR 素材来源详见 public/assets/CREDITS.md。</p>
+      </section>
+      <pre id="performance" class="hud performance" hidden></pre>
+      <p id="explore" class="hud explore">已探索 0%</p>
+      <p class="hud controls-hint">WASD 移动 · Shift 冲刺 · Ctrl 潜行 · 左键 进攻（正面会绕背）/ 按住发力 · 右键 防守（抓手腕 / 护名牌） · E 控手（抓他手腕）· W 顶 / S 拽 · 空格 跳 / 较劲时泄力 · R 按回 · Q 扯名牌时背身格挡 · Z 躺下 · X 坐长椅 · V 视角 · M 大地图<span class="practice-only"> · 1–8 情景练习（0 退出）· F2 规则 · F4 重置练习</span></p>
+      <footer class="hud attribution">非官方同人作品　|　地图数据 © OpenStreetMap contributors</footer>
+      <section id="start-panel" class="hud start-panel">
+        <p>从湖南岸步道出发</p>
+        <button id="start-button" type="button">进入赛区</button>
+        <span>电脑点击后锁定鼠标；手机左摇杆移动、右侧拖动视角</span>
+      </section>
+      <div id="joystick" class="hud joystick" aria-label="移动摇杆"><i id="joystick-knob"></i></div>
+      <section id="loading" class="loading">
+        <div class="loading-line"></div>
+        <p>正在进入未名湖畔</p>
+        <span id="loading-text">准备渲染管线…</span>
+      </section>
+      <section id="error-panel" class="error" hidden>
+        <h2>场景未能启动</h2>
+        <p id="error-text"></p>
+        <button id="retry" type="button">重新加载</button>
+      </section>
+    </main>
+  </body>
+</html>

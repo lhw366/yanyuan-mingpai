@@ -1,0 +1,8 @@
+{
+  "$schema": "../../schemas/input.schema.json",
+  "version": 1,
+  "ripDragPixelsPerUnit": 800,
+  "maxRipDrag": 2.5,
+  "focusFov": 45,
+  "focusPushMeters": 0.35
+}

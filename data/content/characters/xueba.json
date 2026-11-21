@@ -1,0 +1,9 @@
+{
+  "$schema": "../../schemas/character.schema.json",
+  "version": 1,
+  "id": "xueba",
+  "vrm": "blazer_boy.vrm",
+  "displayName": "预判",
+  "tagColor": "#c18b32",
+  "defaultRole": "预判"
+}

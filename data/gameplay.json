@@ -1,0 +1,182 @@
+{
+  "tickRate": 30,
+  "defaultStat": 3,
+  "match": {
+    "minPlayers": 2, "maxPlayers": 8, "defaultPlayers": 6,
+    "countdownSeconds": 3, "durationSeconds": null,
+    "characters": {
+      "tiebi": { "strength": 5, "agility": 2, "endurance": 3, "reaction": 2 },
+      "jifeng": { "strength": 2, "agility": 5, "endurance": 3, "reaction": 2 },
+      "yisangzi": { "strength": 2, "agility": 3, "endurance": 3, "reaction": 4 },
+      "xueba": { "strength": 1, "agility": 3, "endurance": 4, "reaction": 4 }
+    },
+    "zone": { "staminaPerSecond": 10, "adhesionPerSecond": 3, "eliminateSeconds": 8, "warningSeconds": 1 },
+    "golden": { "spawnSeconds": [60, 120], "pickupMeters": 0.8, "shieldAdhesion": 40, "score": 2 }
+  },
+  "movement": {
+    "walk": { "base": 3.9, "perAgility": 0.1 },
+    "sprint": { "base": 6.1, "perAgility": 0.3 },
+    "sneak": { "base": 1.6, "perAgility": 0.1 },
+    "turnDegrees": { "base": 300, "perAgility": 30 },
+    "guardSpeedFactor": 0.9, "pressSpeedFactor": 0.6,
+    "exhaustedWalkFactor": 0.8,
+    "focusTurnFactor": 0.4,
+    "lowStaminaTurnFactor": 0.85,
+    "jumpSpeed": 4.6,
+    "gravity": 11.8,
+    "landingSprintLockSeconds": 0.15
+  },
+  "stamina": {
+    "maxBase": 120, "maxPerEndurance": 10,
+    "regenBase": 14, "regenPerEndurance": 2,
+    "regenDelaySeconds": 0.8,
+    "sneakRegenFactor": 1.2, "sitRegenFactor": 2,
+    "sprintPerSecond": 18, "guardPerSecond": 0, "jumpCost": 12,
+    "focusPerSecond": 6, "tugPerSecond": 12,
+    "lowFraction": 0.25, "exhaustionExitFraction": 0.3
+  },
+  "tag": {
+    "initialAdhesion": 100, "initialPressBackCap": 90,
+    "firmMin": 70, "liftedMin": 40, "waterCap": 40,
+    "windPerSecond": { "firm": 0, "lifted": 0.75, "half": 3 },
+    "pullFactor": { "firm": 1, "lifted": 1.4, "half": 2 },
+    "visibleMeters": { "lifted": 8, "half": 15 },
+    "pressSeconds": 1, "pressCost": 10, "pressGain": 30, "capLoss": 10, "minCap": 50
+  },
+  "rip": {
+    "reachMeters": 1.5, "breakMeters": 1.6, "rearDegrees": 120, "bufferDegrees": 15,
+    "tagBackOffset": 0.18, "reachSeconds": 0.15,
+    "tolerance": 0.35, "tolerancePerReaction": 0.02, "sneakBonus": 0.1,
+    "sneakWarningMeters": 2.2, "warningBase": 0.85, "warningPerReaction": 0.05,
+    "missSeconds": 0.4, "interruptSeconds": 0.5, "releaseSeconds": 0.12, "releasePerReaction": 0.01,
+    "perSecond": 90, "strengthBase": 0.55, "strengthScale": 0.15,
+    "resistBase": 1.15, "resistScale": 0.05, "edgeFactor": 0.6,
+    "lowFactor": 0.85, "exhaustedVictimFactor": 1.25,
+    "drag": { "hold": 1, "aligned": 1, "fast": 1.25, "offAxis": 0.6,
+      "alignedDegrees": 60, "preciseDegrees": 20, "fastSpeed": 1.25, "yankSpeed": 2.16, "yankSeconds": 0.2 },
+    "parrySeconds": 0.25, "parryPerReaction": 0.03, "parryCost": 6, "staggerSeconds": 1,
+    "guardReleaseSeconds": 0.3, "blockSeconds": 0.35, "blockCost": 15,
+    "blockPauseSeconds": 0.3, "blockCooldownSeconds": 1.5,
+    "score": 1, "ambushBonus": 1
+  },
+  "sound": {
+    "footsteps": {
+      "grass": { "walk": 7, "sprint": 13, "sneak": 2, "land": 10 },
+      "stone": { "walk": 11, "sprint": 18, "sneak": 3.5, "land": 15 },
+      "turf": { "walk": 8, "sprint": 14, "sneak": 2.5, "land": 11 },
+      "bush": { "walk": 9, "sprint": 16, "sneak": 4, "land": 12 },
+      "water": { "walk": 12 }
+    },
+    "characterFactor": { "tiebi": 1.15, "jifeng": 0.9 },
+    "radius": { "breath": 6, "pull": 12, "ripped": 20 },
+    "intervalSeconds": { "walk": 0.5, "sprint": 0.3, "sneak": 0.6, "breath": 1, "pull": 0.4 },
+    "blockedFactor": 0.5, "focusFarFraction": 0.5, "focusFarGain": 0.5,
+    "footstepVariants": 4, "pitchMin": 0.95, "pitchMax": 1.05
+  },
+  "contest": {
+    "catchSeconds": 0.15, "effortRiseSeconds": 0.2, "effortFallSeconds": 0.3,
+    "oneHandPerSecond": 12, "twoHandsPerSecond": 16, "restRegenFactor": 0.5,
+    "strengthBase": 0.7, "strengthScale": 0.1, "lowFactor": 0.75, "exhaustedFactor": 0.35,
+    "pushFactor": 1.25, "pullFactor": 0.85, "progressPerSecond": 0.85, "idleReturnPerSecond": 0.3,
+    "pinSeconds": 1, "shakenSeconds": 0.35, "timeoutSeconds": 3, "retreatMeters": 0.3,
+    "breakMeters": 1.6, "backrestFactor": 1.2
+  },
+  "drag": {
+    "minMeters": 0.5, "maxMeters": 0.9, "maxSpeed": 0.8,
+    "perSecond": 4, "waterMargin": 0.5, "probeDirections": 32, "probeStep": 0.05,
+    "pinLingerSeconds": 0.5, "pinTurnFactor": 0.3,
+    "pullFromCoverMeters": 0.6, "pullFromCoverStumbleSeconds": 0.3
+  },
+  "reachAround": {
+    "meters": 1.2, "seconds": 0.45, "frontDegrees": 60, "angleFactor": 0.6,
+    "sideAngleFactor": 0.8, "crouchToleranceLoss": 0.1, "crouchPullFactor": 0.85
+  },
+  "hold": {
+    "meters": 1, "sideDegrees": 120, "moveFactor": 0.7,
+    "heldTurnFactor": 0.5, "heldMoveFactor": 0.6, "cooldownSeconds": 0.5,
+    "guardExposeProgress": 0.5
+  },
+  "release": {
+    "cost": 8, "retreatMeters": 0.6, "pushWindowSeconds": 0.25, "stumbleSeconds": 0.6,
+    "missStunSeconds": 0.3, "turnFactor": 0.3, "moveFactor": 0.4, "stumbleRearHalfDegrees": 75
+  },
+  "cover": {
+    "backMeters": 0.45, "allyMeters": 0.6, "allyDegrees": 120, "moveFactor": 0.7,
+    "lingerSeconds": 0.3, "pinSeconds": 1
+  },
+  "bodyCollision": {
+    "radius": 0.3, "height": 1.8, "stumbleSeconds": 0.3, "slowFactor": 0.5, "slowSeconds": 0.3,
+    "solverPasses": 64, "contactEpsilon": 1e-10
+  },
+  "guardContest": {
+    "guardPullFactor": 0.7, "toleranceLoss": 0.05
+  },
+  "counter": { "seconds": 0.4 },
+  "ground": {
+    "lieSeconds": 0.4, "standSeconds": 1, "maxLieSeconds": null, "cooldownSeconds": 6,
+    "regenFactor": 1.5, "pullMeters": 1, "backrestFactor": 1.2, "lyingForceFactor": 0.8, "crawlSpeed": 0.4, "maxAttackers": 2,
+    "liftLeverage": 1.2, "assistFactor": 0.2, "liftProgressPerSecond": 1.6,
+    "pulledStunSeconds": 0.6, "shakenSeconds": 0.4,
+    "momentumWindowSeconds": 0.25, "momentumEffort": 0.8, "fastStandSeconds": 0.3,
+    "momentumStunSeconds": 0.4, "momentumStepMeters": 0.3,
+    "momentumRipSeconds": 1, "momentumReachSeconds": 0.3, "momentumReachMeters": 1.6,
+    "momentumAngleFactor": 1
+  },
+  "jumpRip": {
+    "meters": 1.8, "rearHalfDegrees": 75, "reachSeconds": 0.28, "angleFactor": 1,
+    "cost": 6, "missStumbleSeconds": 0.8,
+    "dropMeters": 0.4, "highMeters": 2.48, "highReachSeconds": 0.25, "highAngleFactor": 0.8,
+    "instantRip": true, "instantMaxCoverage": 0.5
+  },
+  "bench": {
+    "seatOffset": 0.45, "interactMeters": 1, "sitSeconds": 0.5, "standSeconds": 0.4,
+    "maxSitSeconds": 10, "cooldownSeconds": 8,
+    "tugMeters": 1.2, "frontMeters": 1, "maxAttackers": 2,
+    "liftLeverage": 1.5, "assistFactor": 0.2, "liftProgressPerSecond": 1.6,
+    "splitDefenseFactor": 0.4,
+    "sideMeters": 1.2, "sideReachSeconds": 0.5, "sideAngleFactor": 0.6, "sneakMeters": 0.8, "sneakReachSeconds": 0.35, "sneakPullFactor": 0.5,
+    "pulledStunSeconds": 0.6
+  },
+  "simulation": {
+    "r7": {
+      "setupSeconds": 2, "groundSeconds": 8, "momentumSeconds": 8, "benchSeconds": 4,
+      "jumpSeconds": 3, "jumpDistance": [1.2, 1.9], "jumpLateral": [-0.3, 0.3],
+      "highDistance": [1.6, 2.3], "highDrop": 0.5,
+      "targets": { "groundPull": [40, 55], "momentumRip": [35, 50], "groundDelay": [4, 6],
+        "benchPull": [30, 45], "benchAmbush": [50, 100], "jumpHit": [40, 60], "dropHit": [55, 70] }
+    },
+    "r6": {
+      "seed": 42, "goalRadiusFraction": 0.7, "stopMeters": 0.2, "ripProbability": 0.35,
+      "goalSeparationMargin": 0.5, "goldenTestOffset": { "x": 0, "y": 8, "z": 1.2 }
+    },
+    "r5b": {
+      "trials": 1000,
+      "firstSeed": 1,
+      "stats": { "min": 2, "max": 4 },
+      "front": { "distanceMeters": [0.78, 0.95], "lateralMeters": [-0.08, 0.08], "horizonSeconds": 8 },
+      "reactionSeconds": [0.05, 0.15],
+      "assistReactionSeconds": [0.15, 0.35],
+      "bursts": { "onSeconds": [0.45, 1.15], "offSeconds": [0.2, 0.65], "tactics": [-1, 0, 1] },
+      "wrist": { "setupSeconds": 2, "observationSeconds": 6 },
+      "pincer": { "rearDistanceMeters": [1.4, 2.4], "attackDelaySeconds": [0.1, 0.45], "horizonSeconds": 8 },
+      "exhaustion": { "chaseSeconds": [5, 7], "endurance": 3 },
+      "wind": { "rearDistanceMeters": 1, "setupSeconds": 5, "observationSeconds": 180 },
+      "escapeDeadlineSeconds": 3,
+      "exhaustionDeadlineSeconds": 5,
+      "targets": {
+        "frontOpen": [90, 100], "frontCatch": [25, 40], "intermittent": [1.5, 3],
+        "assisted": [75, 90], "pincer": [70, 85], "exhausted": [45, 70]
+      }
+    },
+    "r5c": {
+      "targets": {
+        "frontCatch": [25, 40], "controlledTouch": [90, 100], "controlledRip": [60, 75],
+        "counterRip": [30, 45], "uncontrolledRip": [85, 100], "guardPryRip": [45, 60],
+        "pushToCover": [3, 4], "coveredRip": [0, 5], "pulledRip": [40, 55]
+      },
+      "control": { "setupSeconds": 2, "horizonSeconds": 8 },
+      "tree": { "startMeters": 2, "pinnedMeters": 0.4, "horizonSeconds": 6,
+        "pullDeadlineSeconds": 4, "coverageFractions": [0.25, 0.5, 0.75], "trunkRadius": 0.35 }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "../../schemas/character.schema.json",
+  "version": 1,
+  "id": "tiebi",
+  "vrm": "gakuran_boy.vrm",
+  "displayName": "铁臂",
+  "tagColor": "#b64b3c",
+  "defaultRole": "铁臂"
+}

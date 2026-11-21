@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schemas/character-catalog.schema.json",
+  "version": 1,
+  "player": "player",
+  "dummies": ["tiebi", "yisangzi", "xueba"],
+  "backup": ["yui_uniform"]
+}

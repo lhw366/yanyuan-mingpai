@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "输入与镜头表现设置",
+  "type": "object",
+  "required": ["version", "ripDragPixelsPerUnit", "maxRipDrag", "focusFov", "focusPushMeters"],
+  "properties": {
+    "version": { "const": 1 },
+    "ripDragPixelsPerUnit": { "type": "number", "exclusiveMinimum": 1 },
+    "maxRipDrag": { "type": "number", "exclusiveMinimum": 0 },
+    "focusFov": { "type": "number", "exclusiveMinimum": 10 },
+    "focusPushMeters": { "type": "number", "minimum": 0 }
+  },
+  "additionalProperties": false
+}

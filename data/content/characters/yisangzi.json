@@ -1,0 +1,9 @@
+{
+  "$schema": "../../schemas/character.schema.json",
+  "version": 1,
+  "id": "yisangzi",
+  "vrm": "jersey_girl.vrm",
+  "displayName": "一嗓子",
+  "tagColor": "#376b83",
+  "defaultRole": "一嗓子"
+}

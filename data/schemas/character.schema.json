@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "燕园人物内容定义",
+  "type": "object",
+  "required": ["version", "id", "vrm", "displayName", "tagColor", "defaultRole"],
+  "properties": {
+    "version": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+    "vrm": { "type": "string", "pattern": "^[a-zA-Z0-9_-]+\\.vrm$" },
+    "displayName": { "type": "string", "minLength": 1 },
+    "tagColor": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+    "defaultRole": { "type": "string", "minLength": 1 }
+  },
+  "additionalProperties": false
+}

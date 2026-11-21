@@ -1,0 +1,9 @@
+{
+  "$schema": "../../schemas/character.schema.json",
+  "version": 1,
+  "id": "player",
+  "vrm": "jersey_boy.vrm",
+  "displayName": "燕园玩家",
+  "tagColor": "#b64b3c",
+  "defaultRole": "玩家"
+}

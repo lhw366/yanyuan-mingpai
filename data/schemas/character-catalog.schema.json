@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "燕园人物默认编组",
+  "type": "object",
+  "required": ["version", "player", "dummies"],
+  "properties": {
+    "version": { "const": 1 },
+    "player": { "type": "string" },
+    "dummies": { "type": "array", "items": { "type": "string" }, "minItems": 1, "uniqueItems": true },
+    "backup": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+  },
+  "additionalProperties": false
+}

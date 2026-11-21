@@ -1,0 +1,9 @@
+{
+  "$schema": "../../schemas/character.schema.json",
+  "version": 1,
+  "id": "yui_uniform",
+  "vrm": "yui_uniform.vrm",
+  "displayName": "结",
+  "tagColor": "#6f7f72",
+  "defaultRole": "备用"
+}
